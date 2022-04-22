@@ -1,0 +1,102 @@
+$font-stack1: "Lucida Sans Unicode", "Lucida Grande", sans-serif;;
+$color1: #30384C;
+$color2: #F55A41;
+$color3: #F8E6D3;
+$color4: white;
+
+* {
+    font-family: $font-stack1; 
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+main {
+    display: flex;
+}
+.sidebar {
+    width: 30%;
+    background-color: $color3;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 65px;
+    padding-top: 15px;
+    
+
+    
+    .research {
+        position: fixed;
+        row-gap: 10px;
+        width: 28%;
+
+        .search_inputs, .number_players_buttons, .age_buttons, .duration_buttons, .category_research {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            padding-bottom: 10px;
+            
+        }
+    }
+
+    
+    
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    width: 100%;
+    
+}
+
+button {
+    background-color: $color4;
+    padding: 10px;
+    color: black;
+    border: none;
+
+    a {
+        text-decoration: none;
+    }
+    
+    a:visited {
+        text-decoration: none;
+    }
+}
+
+button:hover {
+    background-color: $color2;
+}
+
+.games {
+    width: 70%;
+    padding-top: 10px;
+    float: right;
+
+    .part {
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    .cards {
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        
+        
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .navigation_buttons {
+            display: flex;
+            text-align: center;
+        }
+        
+    }
+}
+
+

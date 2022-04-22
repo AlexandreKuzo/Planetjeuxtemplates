@@ -1,0 +1,80 @@
+@media (max-width: 767px) {
+   header {
+       display: flex;
+       flex-wrap: wrap;
+       height: auto;
+       text-align: center;
+       
+       .logo {
+            
+        img {
+            height: 150px;
+            }
+        
+        }
+
+        .menu {
+            ul {
+                display: block;
+            }
+        }
+        
+       
+   }
+
+   main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+        .sidebar {
+            width: 100%;
+            padding: 0;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+            row-gap: 15px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+
+            .research {
+                width: 95%;
+                position: relative;
+            }
+        }
+        .games {
+            width: 100%;
+            .cards {
+                padding: 0;
+            }
+        }
+       
+   
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .cards {
+        column-gap: 10px;
+    }
+
+    .search_inputs, .number_players_buttons, .age_buttons, .duration_buttons {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+  @media (max-width: 333px) {
+      .modal {
+          width: 100%;
+          img {
+              width: auto;
+          }
+      }
+  }
+   
+}
+   
+

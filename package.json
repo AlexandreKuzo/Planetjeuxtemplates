@@ -1,0 +1,11 @@
+{
+  "name": "webludo_sass",
+  "version": "1.0.0",
+  "description": "Templates catalogue jeux",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/style.scss:style.css"
+  },
+  "author": "alexandrekuzo",
+  "license": "ISC"
+}

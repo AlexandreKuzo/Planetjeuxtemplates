@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shrikhand&display=swap");
+* {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  margin: 0 auto;
+  max-width: 1600px; }
+
+main {
+  display: flex; }
+
+.sidebar {
+  width: 30%;
+  background-color: #F8E6D3;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 65px;
+  padding-top: 15px; }
+  .sidebar .research {
+    position: fixed;
+    row-gap: 10px;
+    width: 28%; }
+    .sidebar .research .search_inputs, .sidebar .research .number_players_buttons, .sidebar .research .age_buttons, .sidebar .research .duration_buttons, .sidebar .research .category_research {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      padding-bottom: 10px; }
+
+input {
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  width: 100%; }
+
+button {
+  background-color: white;
+  padding: 10px;
+  color: black;
+  border: none; }
+  button a {
+    text-decoration: none; }
+  button a:visited {
+    text-decoration: none; }
+
+button:hover {
+  background-color: #F55A41; }
+
+.games {
+  width: 70%;
+  padding-top: 10px;
+  float: right; }
+  .games .part {
+    text-align: center;
+    padding-bottom: 5px; }
+  .games .cards {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px; }
+    .games .cards a {
+      text-decoration: none;
+      color: black; }
+    .games .cards .navigation_buttons {
+      display: flex;
+      text-align: center; }
+
+header {
+  background-color: #30384C;
+  height: 150px;
+  display: flex;
+  color: white;
+  align-items: center;
+  padding-bottom: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 9999; }
+  header .logo {
+    display: flex;
+    height: 100%;
+    width: auto; }
+  header .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    header .menu ul {
+      list-style-type: none;
+      display: inline-flex; }
+      header .menu ul a {
+        text-decoration: none;
+        color: white; }
+      header .menu ul a:hover {
+        color: #F55A41; }
+      header .menu ul a:visited {
+        text-decoration: none; }
+  header .telephone, header .email {
+    display: flex; }
+
+.card {
+  width: 200px;
+  border: none;
+  position: relative;
+  box-shadow: 0 2px 2px #f3efef; }
+  .card .like {
+    position: absolute;
+    padding: 3px;
+    z-index: 2;
+    color: lightgreen; }
+  .card img {
+    width: 100%;
+    height: 200px;
+    border: none; }
+  .card .container {
+    padding-bottom: 5px;
+    margin: 2px; }
+
+.card:hover {
+  opacity: 0.5; }
+
+.card:visited {
+  text-decoration: none; }
+
+@media (max-width: 767px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    text-align: center; }
+    header .logo img {
+      height: 150px; }
+    header .menu ul {
+      display: block; }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    main .sidebar {
+      width: 100%;
+      padding: 0;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+      row-gap: 15px;
+      padding-bottom: 20px;
+      padding-top: 20px; }
+      main .sidebar .research {
+        width: 95%;
+        position: relative; }
+    main .games {
+      width: 100%; }
+      main .games .cards {
+        padding: 0; } }
+@media (min-width: 768px) and (max-width: 992px) {
+  .cards {
+    column-gap: 10px; }
+
+  .search_inputs, .number_players_buttons, .age_buttons, .duration_buttons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px; } }
+@media (min-width: 768px) and (max-width: 992px) and (max-width: 333px) {
+  .modal {
+    width: 100%; }
+    .modal img {
+      width: auto; } }
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  width: 60%;
+  top: 10%;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  background: rgba(77, 77, 77, 0.7);
+  border-radius: 15px;
+  transition: .3s;
+  overflow: auto;
+  z-index: 9999; }
+
+.modal:target {
+  visibility: visible;
+  opacity: 1; }
+
+.modal_header {
+  background-color: #F8E6D3;
+  color: black;
+  justify-content: space-between;
+  padding: 15px;
+  display: flex; }
+  .modal_header span {
+    color: black; }
+
+.game_detail_modal {
+  color: white;
+  padding-top: 10px;
+  align-items: center; }
+  .game_detail_modal .card:hover {
+    opacity: 1; }
+  .game_detail_modal .status {
+    padding-top: 10px;
+    text-align: center; }
+    .game_detail_modal .status ul {
+      padding: 0;
+      list-style-type: none; }
+
+/*# sourceMappingURL=style.css.map */

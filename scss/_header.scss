@@ -1,0 +1,47 @@
+header {
+    background-color: $color1;
+    height: 150px;
+    display: flex;
+    color: $color4;
+    align-items: center;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    
+
+    .logo { 
+        display: flex;
+        height: 100%;
+        width: auto;
+
+       }
+    
+       .menu {
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           
+           ul {
+               list-style-type: none;
+               display: inline-flex;
+
+               a {
+                   text-decoration: none;
+                   color: white;
+               }
+
+               a:hover {
+                   color: $color2
+               }
+
+               a:visited {
+                text-decoration: none;
+               }
+               
+           }
+       }
+       .telephone, .email {
+           display: flex;
+       }
+}
